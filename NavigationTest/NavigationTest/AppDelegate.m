@@ -15,24 +15,15 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-  
-  
-  
-  
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   self.window.rootViewController = [[MainViewController alloc] init];
-  
   self.naviController = [[UINavigationController alloc] initWithRootViewController:self.window.rootViewController];
-  
   [self.window addSubview:self.naviController.view];
   [self.window makeKeyAndVisible];
   
   return YES;
 }
-
-
 
 @end

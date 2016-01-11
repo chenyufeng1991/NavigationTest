@@ -12,24 +12,16 @@
 @interface ViewController ()
 
 @end
-
-
-
 /*
  这里是模态视图详解；modal；
  包括跳转的淡入淡出的方式；
- 
- 
  */
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
 
-  
-  
-  
+  [super viewDidLoad];
 }
 
 /*
@@ -39,25 +31,14 @@
  UIModalTransitionStyleCrossDissolve,
  UIModalTransitionStylePartialCurl NS_ENUM_AVAILABLE_IOS(3_2),
  };
-
- 
  */
 
 - (IBAction)buttonpressed:(id)sender {
 
-  
-  
-  
   UIViewController *second = [[UIViewController alloc ]init];
   second = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
   second.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-  
-  
-  
   [self presentViewController:second animated:true completion:nil];
-
 }
-
-
 
 @end

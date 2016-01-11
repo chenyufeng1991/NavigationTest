@@ -15,20 +15,13 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-  //如果使用了storyboard，导航栏可以使用以下代码生成；
-  //和没有storyboard而使用xib生成导航栏只差2行代码；
-  
-  self.naviController = [[UINavigationController alloc] initWithRootViewController:self.window.rootViewController];
-  
-  [self.window addSubview:self.naviController.view];
-  [self.window makeKeyAndVisible];
-  
-  
-  
-  return YES;
+    //如果使用了storyboard，导航栏可以使用以下代码生成；
+    //和没有storyboard而使用xib生成导航栏只差2行代码；
+    self.naviController = [[UINavigationController alloc] initWithRootViewController:self.window.rootViewController];
+    [self.window addSubview:self.naviController.view];
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 @end

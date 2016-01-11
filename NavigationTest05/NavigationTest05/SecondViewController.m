@@ -17,18 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-  
 }
-
 
 - (IBAction)backButtonPressed:(id)sender {
-
-  [self dismissViewControllerAnimated:true completion:nil];
-
-
+    [self dismissViewControllerAnimated:true completion:nil];
 }
-
-
 
 @end

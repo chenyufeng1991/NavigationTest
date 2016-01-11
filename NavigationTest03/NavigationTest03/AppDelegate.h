@@ -13,11 +13,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-
 //定义全局可用的导航栏；
 @property(nonatomic,strong) UINavigationController *naviController;
-
 //作为导航栏的第一个ViewController，也就是rootViewController；
 //@property(nonatomic,strong) MainViewController *rootViewController;
 
